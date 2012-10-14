@@ -15,7 +15,7 @@
 ** limitations under the License.
 */
 
-#define LOG_TAG "LatinIME: jni: BinaryDictionary"
+#define LOG_TAG "HareIME: jni: BinaryDictionary"
 
 #include "binary_format.h"
 #include "correction.h"
