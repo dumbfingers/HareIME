@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     coreApp="true"
-    package="com.android.hareime"
+    package="com.android.hareime.latin"
     android:versionCode="1"
     android:versionName="0.1" >
 
@@ -17,7 +17,7 @@
         android:killAfterRestore="false"
         android:label="@string/aosp_android_keyboard_ime_name" >
         <service
-            android:name="HareIME"
+            android:name="LatinIME"
             android:label="@string/aosp_android_keyboard_ime_name"
             android:permission="android.permission.BIND_INPUT_METHOD" >
             <intent-filter>

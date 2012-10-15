@@ -21,13 +21,13 @@
 <com.android.hareime.latin.InputView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:layout_height="wrap_content"
 >
     <!-- The height of key_preview_backing view will automatically be determined by code. -->
     <View
         android:id="@+id/key_preview_backing"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="0dp" />
 
     <!-- On tablets, the suggestions strip is centered with horizontal paddings on both sides
@@ -36,7 +36,7 @@
     <LinearLayout
         android:id="@+id/suggestions_container"
         android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
     >
         <View
@@ -59,6 +59,6 @@
     <com.android.hareime.keyboard.LatinKeyboardView
         android:id="@+id/keyboard_view"
         android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 </com.android.hareime.latin.InputView>

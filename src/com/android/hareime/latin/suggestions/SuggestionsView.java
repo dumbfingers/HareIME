@@ -185,7 +185,7 @@ public class SuggestionsView extends RelativeLayout implements OnClickListener,
             final View divider = dividers.get(0);
             mPadding = word.getCompoundPaddingLeft() + word.getCompoundPaddingRight();
             divider.measure(
-                    ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+                    ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT);
             mDividerWidth = divider.getMeasuredWidth();
 
             final Resources res = word.getResources();
@@ -405,7 +405,7 @@ public class SuggestionsView extends RelativeLayout implements OnClickListener,
                 word.setTextScaleX(scaleX);
                 stripView.addView(word);
                 setLayoutWeight(
-                        word, getSuggestionWeight(index), ViewGroup.LayoutParams.MATCH_PARENT);
+                        word, getSuggestionWeight(index), ViewGroup.LayoutParams.FILL_PARENT);
                 x += word.getMeasuredWidth();
 
                 if (DBG && pos < suggestedWords.size()) {
@@ -489,7 +489,7 @@ public class SuggestionsView extends RelativeLayout implements OnClickListener,
             wordView.setText(text);
             wordView.setTextScaleX(wordScaleX);
             stripView.addView(wordView);
-            setLayoutWeight(wordView, mCenterSuggestionWeight, ViewGroup.LayoutParams.MATCH_PARENT);
+            setLayoutWeight(wordView, mCenterSuggestionWeight, ViewGroup.LayoutParams.FILL_PARENT);
 
             stripView.addView(mDividers.get(0));
 
@@ -507,7 +507,7 @@ public class SuggestionsView extends RelativeLayout implements OnClickListener,
             hintView.setTextScaleX(hintScaleX);
             stripView.addView(hintView);
             setLayoutWeight(
-                    hintView, 1.0f - mCenterSuggestionWeight, ViewGroup.LayoutParams.MATCH_PARENT);
+                    hintView, 1.0f - mCenterSuggestionWeight, ViewGroup.LayoutParams.FILL_PARENT);
 
             wordView.setOnClickListener(listener);
             leftArrowView.setOnClickListener(listener);

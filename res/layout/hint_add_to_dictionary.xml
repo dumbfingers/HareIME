@@ -21,8 +21,8 @@
 <!-- This is derived from suggestion_word.xml without minWidth attribute and padding -->
 <TextView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:textSize="@dimen/suggestion_text_size"
     android:gravity="center"
     android:paddingLeft="0dp"
